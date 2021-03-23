@@ -1,0 +1,49 @@
+.product-card{
+    width: 250px;
+    position: relative;
+    margin-top: 25px;
+   
+    &__img{
+        width: 100%;
+    }
+    &__description{
+        margin-top: 15px;
+        display: block;
+        font-size: 15px;
+        height: 2.0rem;
+        overflow: hidden;
+        text-align: left;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+    }
+    &__contact{
+        font-size: 15px;
+        line-height: 1.5;
+        font-weight: 600;
+        font-style: italic;
+    }
+    &__control{
+        width: 100%;
+        text-align: center;
+    }
+    &__link{
+        position: relative;
+        display: block;
+        height: 250px;
+        display: flex;
+        align-items: center;
+    }
+    &:hover > a img{
+        opacity: 0.6;
+        transition: .5s opacity;
+    }
+}
+@keyframes modal-appear{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0.6;
+    }
+}

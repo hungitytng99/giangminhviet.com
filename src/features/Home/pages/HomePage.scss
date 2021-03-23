@@ -1,0 +1,13 @@
+.middle-banner{
+    margin-top: 70px;
+}
+.album-picture{
+    display: flex;
+    &__title{
+        text-align: center;
+        margin: 30px 0px;
+        color: #867465;
+        font-family: 'Arial', serif;
+        font-size: 26px;
+    }
+}

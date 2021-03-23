@@ -1,0 +1,1 @@
+-- Setting before use react ---

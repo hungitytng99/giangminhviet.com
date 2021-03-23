@@ -1,0 +1,38 @@
+.picture-item{
+    width: 20%;
+    &__link{
+        position: relative;
+        display: block;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 15px;
+            bottom: 15px;
+            left: 15px;
+            right: 15px;
+            border: 1px solid white;
+            opacity: 0;
+        }
+        &-img{
+            width: 100%;
+            &.--modal{
+                width: 1100px;
+                animation: appear ease 1s;
+            }
+        }
+       
+    }
+
+    &:hover > &__link::before{
+        opacity: 1;
+        transition: all 1s;
+    }
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

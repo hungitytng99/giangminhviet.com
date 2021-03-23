@@ -1,0 +1,57 @@
+.footer {
+    background-color: #e9e2d5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    &__register {
+        margin-top: 20px;
+        &-title {
+            text-transform: uppercase;
+            font-size: 16px;
+            color: #333;
+        }
+
+        &-reg {
+            display: flex;
+            align-items: center;
+            font-size: 1.4rem;
+            margin-top: 10px;
+            &-input {
+                width: 68%;
+                float: left;
+                height: 35px;
+                color: #867465;
+                padding: 0 15px;
+                border-radius: 5px;
+                border: 1px solid #867465;
+                margin-right: 3px;
+            }
+            &-btn{
+                width: 30%;
+                height: 35px;
+                color: #ffffff;
+                background-color: #f0ad4e;
+                border: none;
+                border-radius: 5px;
+                &:hover{
+                    background-color: #ec971f;
+                }
+            }
+        }
+        &-text{
+            font-size: 1.4rem;
+            margin-top: 15px;
+        }
+    }
+    &__contact{
+        margin-top: 20px;
+        &-title{
+            font-size: 1.5rem;
+        }
+        &-list{
+            margin-top: 15px;
+        }
+        &-item{
+            display: flex;
+        }
+    }
+}
