@@ -20,7 +20,7 @@ function HomePage() {
                 </Container>
             </div>
             <div className="home-page__banner">
-                <Carousel showThumbs={false} emulateTouch={true}>
+                <Carousel infiniteLoop={true} showThumbs={false} emulateTouch={true}>
                     <img src={Images.BANNER_1} alt="banner"></img>
                     <img src={Images.BANNER_2} alt="banner"></img>
                     <img src={Images.BANNER_3} alt="banner"></img>
@@ -36,7 +36,7 @@ function HomePage() {
             <h2 className="album-picture__title">Album ảnh</h2>
             <div className="album-picture">
                 {ALBUM.map((item)=>{
-                    return <PictureItem key={Math.random()} image={item}/>
+                    return <PictureItem key={item.id} image={item}/>
                 })}
             </div>
             <Footer/>

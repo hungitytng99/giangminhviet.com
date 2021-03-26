@@ -15,8 +15,9 @@ const customStyles = {
         transform             : 'translate(-50%, -50%)',
     }
   };
+ReactModal.setAppElement('#root');
 function PictureItem(props) {
-    const { image } = props.image;
+    const { id, image } = props.image;
     const [ isShowModal, setIsShowModal] = useState(false);
     const handleOpenModal = () => {
         setIsShowModal(true);
@@ -27,7 +28,7 @@ function PictureItem(props) {
     return (
         <div className="picture-item">
             <Link to="#" className="picture-item__link" onClick={handleOpenModal}>
-                <img className="picture-item__link-img" src={image} alt="album-img"></img>
+                <img id={id} className="picture-item__link-img" src={image} alt="album-img"></img>
             </Link>
             <ReactModal 
                 isOpen={isShowModal}

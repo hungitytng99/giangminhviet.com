@@ -2,56 +2,89 @@
     background-color: #e9e2d5;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 30px;
-    &__register {
-        margin-top: 20px;
-        &-title {
-            text-transform: uppercase;
-            font-size: 16px;
-            color: #333;
-        }
-
-        &-reg {
-            display: flex;
-            align-items: center;
-            font-size: 1.4rem;
-            margin-top: 10px;
-            &-input {
-                width: 68%;
-                float: left;
-                height: 35px;
-                color: #867465;
-                padding: 0 15px;
-                border-radius: 5px;
-                border: 1px solid #867465;
-                margin-right: 3px;
-            }
-            &-btn{
-                width: 30%;
-                height: 35px;
-                color: #ffffff;
-                background-color: #f0ad4e;
-                border: none;
-                border-radius: 5px;
-                &:hover{
-                    background-color: #ec971f;
-                }
-            }
-        }
-        &-text{
-            font-size: 1.4rem;
-            margin-top: 15px;
-        }
-    }
     &__contact{
         margin-top: 20px;
         &-title{
-            font-size: 1.5rem;
+            font-size: 1.6rem;
         }
         &-list{
             margin-top: 15px;
         }
         &-item{
             display: flex;
+            align-items: center;
+            margin-top: 12px;
+            &-icon{
+                color: #636363;
+                font-size: 1.6rem;
+                display: block;
+                position: relative;
+                width: 30px;
+                height: 30px;
+                border: 1px solid;     
+                text-align: center;  
+                line-height: 30px;
+            }
         }
+        &-text{
+            font-size: 1.3rem;
+            margin-left: 10px;
+        }
+    }
+    &__help{
+        margin-top: 20px;
+        &-title{
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+        }
+        &-item{
+            display: flex;
+            align-items: center;
+            font-size: 1.4rem;
+            margin-top: 12px;
+            & a{
+                display: block;
+                color: black;
+                padding-left: 12px;
+                &:hover{
+                    transform: scaleX(1.1);
+
+                }
+            }
+
+        }
+    }
+    &__connect{
+        margin-top: 20px;
+        &-title{
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+        }
+        &-list{
+            display: flex;
+        }
+        &-item{
+            margin-right: 10px;
+        }
+    }
+    &__coppy-right{
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin: auto;
+        padding: 5px;
+    }
+}
+
+@keyframes moveleft{
+    from{
+    }
+    to{
+        transform: translate(0px 0px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hidden-mobile{
+        display: none;
     }
 }

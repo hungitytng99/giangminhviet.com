@@ -7,38 +7,28 @@ function Footer() {
         <footer className="footer">
             <Container>
                 <Row>
-                    <Col lg={3}>
-                        <div className="footer__register">
-                            <div className="footer__register-title">Theo dõi bảng tin</div>
-                            <div className="footer__register-reg">
-                                <input className="footer__register-reg-input" type="email" placeholder="Nhập email"></input>
-                                <button className="footer__register-reg-btn">Đăng kí</button>
-                            </div>
-                            <div className="footer__register-text">Nhận được những thông tin mới nhất từ website</div>
-                        </div>
-                    </Col>
-                    <Col lg={3}>
+                    <Col lg={4} md={4} sm={6} xs={12}>
                         <div className="footer__contact">
                             <div className="footer__contact-title">Liên hệ</div>
                             <ul className="footer__contact-list">
-                                <li key="1" className="footer_contact-item">
+                                <li key="1" className="footer__contact-item">
                                     <i className="footer__contact-item-icon fa fa-home"></i>
                                     <div className="footer__contact-text">
                                         <div className="footer__contact-text-name">
                                             Factory1: Ninh Sở - Thường Tín - Hà Nội
                                          </div>
                                         <div className="footer__contact-text-name">
-                                            Factory2: Phú Nghĩa - Chương Mỹ - Hà Nộ
+                                            Factory2: Phú Nghĩa - Chương Mỹ - Hà Nội
                                          </div>
                                     </div>
                                 </li>
-                                <li key="2" className="footer_contact-item">
+                                <li key="2" className="footer__contact-item">
                                     <i className="footer__contact-item-icon fa fa-mobile"></i>
                                     <div className="footer__contact-text">
                                         +84 972874229
                                     </div>
                                 </li>
-                                <li key="3" className="footer_contact-item">
+                                <li key="3" className="footer__contact-item">
                                     <i className="footer__contact-item-icon fa fa fa-envelope"></i>
                                     <div className="footer__contact-text">
                                         Sales@tienphonghandicrafts.com
@@ -47,34 +37,34 @@ function Footer() {
                             </ul>
                         </div>
                     </Col>
-                    <Col lg={3}>
+                    <Col lg={4} md={4} sm={6} xs={12}>
                         <div className="footer__help">
                             <div className="footer__help-title">Hỗ trợ</div>
                             <ul className="footer__help-list">
                                 <li key="4" className="footer__help-item">
                                     <i className="fa fa-angle-right"></i>
-                                    <span>Trang chủ</span>
+                                    <Link to="#">Trang chủ</Link>
                                 </li>
                                 <li key="5" className="footer__help-item">
                                     <i className="fa fa-angle-right"></i>
-                                    <span>Giới thiệu</span>
+                                    <Link to="#">Giới thiệu</Link>
                                 </li>
                                 <li key="6" className="footer__help-item">
                                     <i className="fa fa-angle-right"></i>
-                                    <span>Sản phẩm</span>
+                                    <Link to="#">Sản phẩm</Link>
                                 </li>
                                 <li key="7" className="footer__help-item">
                                     <i className="fa fa-angle-right"></i>
-                                    <span>Tin tức</span>
+                                    <Link to="#">Tin tức</Link>
                                 </li>
                                 <li key="8" className="footer__help-item">
                                     <i className="fa fa-angle-right"></i>
-                                    <span>Liên hệ</span>
+                                    <Link to="#">Liên hệ</Link>
                                 </li>
                             </ul>
                         </div>
                     </Col>
-                    <Col lg={3}>
+                    <Col lg={4} md={4} className="hidden-mobile">
                         <div className="footer__connect">
                             <div className="footer__connect-title">Kết nối với chúng tôi</div>
                             <ul className="footer__connect-list">
@@ -99,14 +89,12 @@ function Footer() {
                                     </Link>
                                 </li>
                             </ul>
-                            <img src={Images.ALIBABA} alt="alibaba"></img>
-                            <div className="footer__connect-text">Liên hệ với chúng tôi</div>
-                            <Link to="#" className="footer__connect-link">
-                                https://vn1533368042swfe.trustpass.alibaba.com/?spm=a2700.icbuShop.88.11.411916cd0N773h
-                            </Link>
+                           
                         </div>
                     </Col>
-
+                </Row>
+                <Row>
+                    <p className="footer__coppy-right">&#169; Bản quyền thuộc về công ty Giang Minh Việt </p>
                 </Row>
             </Container>
         </footer>

@@ -37,16 +37,6 @@ function Header() {
                             <img className="header__item-item-img" src={Images.GOOGLE} alt="google"></img>
                         </Link>
                     </li>
-                    <li className="header__item-item">
-                        <Link to="#" className="header__item-item-signin">Đăng nhập</Link>
-                    </li>
-                    <li className="header__item-item">
-                        <Link to="#" className="header__item-item-signup">Đăng kí</Link>
-                    </li>
-                    <li className="header__item-item --input">
-                        <i className="header__item-item-icon --search fas fa-search"></i>
-                        <input className="header__item-item-search" placeholder="Tìm kiếm"></input>
-                    </li>
                 </ul>
                 <ul className="header__item-list">
                     <li className="header__nav-item">
@@ -58,10 +48,6 @@ function Header() {
                     <li className="header__nav-item">
                         <span>Sản phẩm</span>
                         <i className="header__nav-item-down fas fa-angle-down"></i>
-
-                    </li>
-                    <li className="header__nav-item">
-                        <span>Tin tức</span>
 
                     </li>
                     <li className="header__nav-item">

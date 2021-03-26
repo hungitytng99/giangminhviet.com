@@ -1,4 +1,4 @@
-import { Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import FeatureConstanst from '../../../constants/feature';
 import { Images } from '../../../constants/images';
 import './Feature.scss'
@@ -7,37 +7,46 @@ function Feature() {
     return (
         <div className="feature">
             <div className="feature-title">Danh mục</div>
-            <Row>
-                <ul className="feature-row__list">
-                    <li className="feature-row__item">
-                        <img src={Images.PRODUCT_MAY} alt="feature"></img>
-                    </li>
-                    <li className="feature-row__item">
+            <Container fluid>
+                <Row noGutters={true}>
+                    <Col className="d-flex d-flex justify-content-center" lg={3} md={6} sm={12} >
+                        <img src={Images.PRODUCT_MAY} alt="feature" className="feature__img"></img>
+                    </Col>
+                    <Col lg={3} md={6} sm={12} >
                         <FeatureFirt feature={FeatureConstanst[0]} />
-                    </li>
-                    <li className="feature-row__item">
-                        <img src={Images.PRODUCT_TRE} alt="feature"></img>
-                    </li>
-                    <li className="feature-row__item">
+                    </Col>
+                    <Col className="d-flex justify-content-center" lg={3} md={6} sm={12} >
+                        <img src={Images.PRODUCT_TRE} alt="feature" className="feature__img"></img>
+                    </Col>
+                    <Col lg={3} md={6} sm={12} >
                         <FeatureFirt feature={FeatureConstanst[1]} />
-                    </li>
-                </ul>
-                <ul className="feature-row__list">
-                    <li className="feature-row__item">
-                        <FeatureFirt feature={FeatureConstanst[2]} />
-                    </li>
-                    <li className="feature-row__item">
-                        <img src={Images.PRODUCT_COI} alt="feature"></img>
-                    </li>
-                    <li className="feature-row__item">
-                        <FeatureFirt feature={FeatureConstanst[3]} />
-                    </li>
-                    <li className="feature-row__item">
-                        <img src={Images.PRODUCT_LUCBINH} alt="feature"></img>
-                    </li>
+                    </Col>
+                </Row>
+                <Row noGutters={true}>
+                    <Row noGutters={true}>
+                        <Col className="feature__desktop" lg={3} md={6} sm={12} >
+                            <FeatureFirt feature={FeatureConstanst[2]} />
+                        </Col>
+                        <Col className="d-flex justify-content-center" lg={3} md={6} sm={12} >
+                            <img src={Images.PRODUCT_COI} alt="feature" className="feature__img"></img>
+                        </Col>
+                        <Col className="feature__mobile" lg={3} md={6} sm={12} >
+                            <FeatureFirt feature={FeatureConstanst[2]} />
+                        </Col>
+                        <Col className="feature__desktop"  lg={3} md={6} sm={12} >
+                            <FeatureFirt feature={FeatureConstanst[3]} />
+                        </Col>
+                        <Col className="d-flex justify-content-center" lg={3} md={6} sm={12} >
+                            <img src={Images.PRODUCT_LUCBINH} alt="feature" className="feature__img"></img>
+                        </Col>
+                        <Col className="feature__mobile"  lg={3} md={6} sm={12} >
+                            <FeatureFirt feature={FeatureConstanst[3]} />
 
-                </ul>
-            </Row>
+                        </Col>
+                    </Row>
+                </Row>
+
+            </Container>
         </div>
     )
 }

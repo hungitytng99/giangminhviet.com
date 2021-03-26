@@ -10,7 +10,7 @@ function ListProduct() {
                 <Row>
                     {ProductsConstant.map((item) => {
                         return( 
-                            <Col key={item.description}  lg={3}>
+                            <Col key={item.description} xl={3} lg={4} md={4} sm={6} xs={12}>
                                 <ProductCard product={item}/>
                             </Col>
                     )})}
