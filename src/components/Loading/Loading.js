@@ -22,7 +22,6 @@ Loading.defaultProps = {
 }
 
 function Loading(props){
-    console.log(typeof(PuffLoader));
     return (
         <div className="background-loading f-screen-background">
           <props.LoadingComponent css={override} size={props.size} />

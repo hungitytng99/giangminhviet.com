@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import ReactModal from 'react-modal';
-import { Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './PictureItem.scss'
 const customStyles = {
     overlay:{

@@ -46,6 +46,9 @@ a {
   -webkit-transition: .2s color,.2s background, .2s border;
   transition: .2s color, .2s background, .2s border;
 }
+label{
+  margin-bottom: 0px;
+}
 
 a:hover{
   text-decoration: none;

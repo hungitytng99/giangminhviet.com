@@ -1,0 +1,18 @@
+.category-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.down-icon{
+    padding-right: 10px;
+}
+.category-collapse{
+    &__list{
+        margin-left: 10px;
+    }
+    &__item{
+        &:hover{
+            color: #d38648;
+        }
+    }
+}

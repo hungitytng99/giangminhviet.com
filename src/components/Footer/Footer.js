@@ -64,7 +64,7 @@ function Footer() {
                             </ul>
                         </div>
                     </Col>
-                    <Col lg={4} md={4} className="hidden-mobile">
+                    <Col lg={4} md={4} className="footer-hidden-mobile">
                         <div className="footer__connect">
                             <div className="footer__connect-title">Kết nối với chúng tôi</div>
                             <ul className="footer__connect-list">

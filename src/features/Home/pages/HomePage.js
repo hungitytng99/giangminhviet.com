@@ -20,7 +20,7 @@ function HomePage() {
                 </Container>
             </div>
             <div className="home-page__banner">
-                <Carousel infiniteLoop={true} showThumbs={false} emulateTouch={true}>
+                <Carousel infiniteLoop={true} showThumbs={false} emulateTouch={true} autoPlay={true} interval={6000}>
                     <img src={Images.BANNER_1} alt="banner"></img>
                     <img src={Images.BANNER_2} alt="banner"></img>
                     <img src={Images.BANNER_3} alt="banner"></img>

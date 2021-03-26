@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import Loading from './components/Loading/Loading';
-import NotFound from './components/NotFound/NotFound';
 import React, { Suspense } from 'react';
 //Lazy loading:
 const HomePage = React.lazy(() => import('./features/Home'));

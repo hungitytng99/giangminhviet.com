@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Images } from "../../../constants/images";
 import "./ProductCard.scss"
 ProductCard.defaultProps = {
     product: {
