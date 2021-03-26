@@ -22,7 +22,7 @@ function CategoryItem(props) {
                 <ul className="category-collapse__list">
                     {item.child.map((child)=>{
                         return(
-                            <li key={child.id} className="category-collapse__item">
+                            <li key={child} className="category-collapse__item">
                                 {child}
                             </li>
                         )

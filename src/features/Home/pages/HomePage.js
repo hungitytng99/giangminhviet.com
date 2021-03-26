@@ -9,6 +9,8 @@ import './HomePage.scss'
 import PictureItem from "../components/PictureItem";
 import ALBUM from "../../../constants/album";
 import Footer from "../../../components/Footer/Footer";
+import { Link } from "react-router-dom";
+import LinkList from "../../../constants/link";
 function HomePage() {
     return (
         <div className="home-page">
@@ -20,7 +22,7 @@ function HomePage() {
                 </Container>
             </div>
             <div className="home-page__banner">
-                <Carousel infiniteLoop={true} showThumbs={false} emulateTouch={true} autoPlay={true} interval={6000}>
+                <Carousel infiniteLoop={true} showThumbs={false} emulateTouch={true} autoPlay={true} interval={5000}>
                     <img src={Images.BANNER_1} alt="banner"></img>
                     <img src={Images.BANNER_2} alt="banner"></img>
                     <img src={Images.BANNER_3} alt="banner"></img>
@@ -30,14 +32,17 @@ function HomePage() {
             </div>
             <Feature/>
             <ListProduct/>
-            <div className="middle-banner">
-                <img src={Images.BANNER_NEW} alt="middle-banner"></img>
-            </div>
+            
             <h2 className="album-picture__title">Album ảnh</h2>
             <div className="album-picture">
                 {ALBUM.map((item)=>{
                     return <PictureItem key={item.id} image={item}/>
                 })}
+            </div>
+            <div className="middle-banner">
+                <Link to={LinkList.ALIBABA} target="_blank">
+                    <img src={Images.BANNER_ALIBABA} alt="middle-banner"></img>
+                </Link>
             </div>
             <Footer/>
         </div>

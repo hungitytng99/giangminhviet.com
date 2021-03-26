@@ -1,7 +1,10 @@
 import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import { Images } from '../../constants/images'
+import LinkList from '../../constants/link';
 import './Footer.scss'
+import zalo from '../../assets/images/zalo.png'
+
 function Footer() {
     return (
         <footer className="footer">
@@ -37,31 +40,11 @@ function Footer() {
                             </ul>
                         </div>
                     </Col>
-                    <Col lg={4} md={4} sm={6} xs={12}>
-                        <div className="footer__help">
-                            <div className="footer__help-title">Hỗ trợ</div>
-                            <ul className="footer__help-list">
-                                <li key="4" className="footer__help-item">
-                                    <i className="fa fa-angle-right"></i>
-                                    <Link to="#">Trang chủ</Link>
-                                </li>
-                                <li key="5" className="footer__help-item">
-                                    <i className="fa fa-angle-right"></i>
-                                    <Link to="#">Giới thiệu</Link>
-                                </li>
-                                <li key="6" className="footer__help-item">
-                                    <i className="fa fa-angle-right"></i>
-                                    <Link to="#">Sản phẩm</Link>
-                                </li>
-                                <li key="7" className="footer__help-item">
-                                    <i className="fa fa-angle-right"></i>
-                                    <Link to="#">Tin tức</Link>
-                                </li>
-                                <li key="8" className="footer__help-item">
-                                    <i className="fa fa-angle-right"></i>
-                                    <Link to="#">Liên hệ</Link>
-                                </li>
-                            </ul>
+                    <Col lg={4}>
+                        <div className="footer__alibaba">
+                            <Link to={LinkList.ALIBABA} target="_blank">
+                                <img src={Images.ALIBABA} alt="alibaba"></img>
+                            </Link>
                         </div>
                     </Col>
                     <Col lg={4} md={4} className="footer-hidden-mobile">
@@ -69,27 +52,27 @@ function Footer() {
                             <div className="footer__connect-title">Kết nối với chúng tôi</div>
                             <ul className="footer__connect-list">
                                 <li key="9" className="footer__connect-item">
-                                    <Link to="#" >
-                                        <img src={Images.FB} alt="facebook"></img>
+                                    <Link to={{ pathname: 'tel:84966854224' }} target="_blank">
+                                        <i className=" footer__connect-phone fas fa-phone-alt"></i>
                                     </Link>
                                 </li>
                                 <li key="10" className="footer__connect-item">
-                                    <Link to="#" >
-                                        <img src={Images.TWITER} alt="facebook"></img>
+                                    <Link to={{ pathname: 'mailto:haunkbn99@gmail.com' }} target="_blank">
+                                        <i className=" footer__connect-mail fas fa-envelope"></i>
                                     </Link>
                                 </li>
                                 <li key="11" className="footer__connect-item">
-                                    <Link to="#" >
-                                        <img src={Images.INSTAGRAM} alt="facebook"></img>
+                                    <Link to={{ pathname: 'https://zalo.me/0966854224' }} target="_blank">
+                                        <img className="footer__connect-zalo" src={zalo} alt="zalo"></img>
                                     </Link>
                                 </li>
-                                <li key="12" className="footer__connect-item">
+                                {/* <li key="12" className="footer__connect-item">
                                     <Link to="#" >
                                         <img src={Images.GOOGLE} alt="facebook"></img>
                                     </Link>
-                                </li>
+                                </li> */}
                             </ul>
-                           
+
                         </div>
                     </Col>
                 </Row>

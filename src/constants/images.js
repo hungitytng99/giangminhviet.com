@@ -12,7 +12,8 @@ export const Images = {
     INSTAGRAM: "http://bizweb.dktcdn.net/100/390/639/themes/770475/assets/instagram-logo32.png?1594051192591",
     GOOGLE: "http://bizweb.dktcdn.net/100/390/639/themes/770475/assets/google-plus-logo-button.png?1594051192591",
     ALIBABA: "//bizweb.dktcdn.net/thumb/medium/100/390/639/themes/770475/assets/logocuoitrang.png?1594051192591",
-
+    ZALO: "../../assets/images/zalo.png",
+    
     BANNER_1: "http://bizweb.dktcdn.net/thumb/2048x2048/100/390/639/themes/770475/assets/slideshow_1.jpg?1594051192591",
     BANNER_2: "http://bizweb.dktcdn.net/thumb/2048x2048/100/390/639/themes/770475/assets/slideshow_3.jpg?1594051192591",
     BANNER_3: "http://bizweb.dktcdn.net/thumb/2048x2048/100/390/639/themes/770475/assets/slideshow_2.jpg?1594051192591",
@@ -34,6 +35,7 @@ export const Images = {
     PRODUCT_8: "//bizweb.dktcdn.net/thumb/large/100/390/639/products/sewh20023-1.jpg?v=1599638178000",
 
     BANNER_NEW: "//bizweb.dktcdn.net/100/390/639/themes/770475/assets/middle_banner.jpg?1594051192591')",
+    BANNER_ALIBABA: "https://s.alicdn.com/@sc01/kf/U14f4670525ab4019acdd9ee54d692f19V.jpg?fbclid=IwAR2JUNrYec00HBiFgAKLZ9qXctnARWFw7v1PRLvM03ofNmJhA6OhiigamL8",
 
     ALBUM_1: "//bizweb.dktcdn.net/100/390/639/themes/770475/assets/client1.png?1594051192591",
     ALBUM_2: "//bizweb.dktcdn.net/100/390/639/themes/770475/assets/client2.png?1594051192591",

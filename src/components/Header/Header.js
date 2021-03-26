@@ -5,6 +5,7 @@ import CATEGORY_LIST from '../../constants/category';
 import { Images } from '../../constants/images';
 import CategoryItem from './CategoryItem';
 import './Header.scss'
+import zalo from '../../assets/images/zalo.png'
 ReactModal.setAppElement('#root');
 const categoryModal = {
     overlay: {
@@ -36,6 +37,9 @@ class Header extends React.Component {
         this.handleOpenCategoryModal = this.handleOpenCategoryModal.bind(this);
         this.handleCloseCategoryModal = this.handleCloseCategoryModal.bind(this);
         this.setOpenCategory = this.setOpenCategory.bind(this);
+    }
+    scrollToBottom(){
+        window.scrollTo(0,document.body.scrollHeight);
     }
     handleOpenCategoryModal() {
         this.setState({
@@ -70,25 +74,25 @@ class Header extends React.Component {
                 <div className="header__item">
                     <ul className="header__item-list hidden-s-576">
                         <li className="header__item-item">
-                            <Link to="#" className="header__item-item-link">
-                                <img className="header__item-item-img" src={Images.FB} alt="facebook"></img>
+                            <Link to={{ pathname: 'tel:84966854224' }} target="_blank">
+                                <i className=" footer__connect-phone fas fa-phone-alt"></i>
                             </Link>
                         </li>
                         <li className="header__item-item">
-                            <Link to="#" className="header__item-item-link">
-                                <img className="header__item-item-img" src={Images.TWITER} alt="twiter"></img>
+                            <Link to={{ pathname: 'mailto:haunkbn99@gmail.com' }} target="_blank">
+                                <i className=" footer__connect-mail fas fa-envelope"></i>
                             </Link>
                         </li>
                         <li className="header__item-item">
-                            <Link to="#" className="header__item-item-link">
-                                <img className="header__item-item-img" src={Images.INSTAGRAM} alt="instagram"></img>
+                            <Link to={{ pathname: 'https://zalo.me/0966854224' }} target="_blank">
+                                <img className="footer__connect-zalo" src={zalo} alt="zalo"></img>
                             </Link>
                         </li>
-                        <li className="header__item-item">
+                        {/* <li className="header__item-item">
                             <Link to="#" className="header__item-item-link">
                                 <img className="header__item-item-img" src={Images.GOOGLE} alt="google"></img>
                             </Link>
-                        </li>
+                        </li> */}
                     </ul>
                     <ul className="header__item-list hidden-mobile">
                         <li className="header__nav-item">
@@ -124,7 +128,7 @@ class Header extends React.Component {
                         <li className="header__nav-item">
                             <span>Giới thiệu</span>
                         </li>
-                        <li className="header__nav-item">
+                        <li className="header__nav-item" onClick={this.scrollToBottom}>
                             <span>Liên hệ</span>
                         </li>
                     </ul>
@@ -151,6 +155,9 @@ class Header extends React.Component {
                                 )
                             })}
                         </ul>
+                        <div className="header-category__contact">
+                            <Link to={{ pathname: 'tel:84966854224' }} target="_blank">Liên hệ : +84966854224 </Link>
+                        </div>
 
                     </ReactModal>
 
